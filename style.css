@@ -1,9 +1,15 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: 'Courier New', Courier, monospace;
-  background: #fdf6f0;
-  color: #5b4a42;
+  font-family: "Courier New", Courier, monospace;
+  background: #f4f7fb;
+  color: #2c3a4a;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -20,14 +26,14 @@ body {
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #a89a91;
+  color: #5e7082;
   margin-bottom: 1rem;
 }
 
 #result {
   font-size: clamp(1.6rem, 5vw, 2.4rem);
   font-weight: normal;
-  color: #5b4a42;
+  color: #2c3a4a;
   letter-spacing: -0.02em;
   line-height: 1.2;
   min-height: 3rem;
@@ -36,7 +42,9 @@ body {
   transition: opacity 0.1s;
 }
 
-#result.flash { opacity: 0.3; }
+#result.flash {
+  opacity: 0.3;
+}
 
 .controls {
   display: flex;
@@ -45,43 +53,52 @@ body {
   margin-bottom: 2.5rem;
 }
 
-select, button {
+select,
+button {
   font-family: inherit;
   font-size: 12px;
   padding: 8px 14px;
-  border: 1px solid #e0d5cc;
-  background: #faf0e6;
-  color: #a89a91;
+  border: 1px solid #c5d5e2;
+  background: #eaf1f7;
+  color: #5e7082;
   cursor: pointer;
   letter-spacing: 0.05em;
   border-radius: 6px;
-  transition: border-color 0.15s, color 0.15s;
+  transition:
+    border-color 0.15s,
+    color 0.15s;
   -webkit-appearance: none;
   appearance: none;
 }
 
-select:hover, button:hover {
-  border-color: #c4b5a9;
-  color: #5b4a42;
+select:hover,
+button:hover {
+  border-color: #a8bfcf;
+  color: #2c3a4a;
 }
 
 button#gen {
-  background: #b8d8ba;
-  color: #3d5a3e;
-  border-color: #b8d8ba;
+  background: #f2cfc6;
+  color: #7a3a2b;
+  border-color: #f2cfc6;
 }
 
 button#gen:hover {
-  background: #9ec4a0;
-  border-color: #9ec4a0;
+  background: #e8bbb0;
+  border-color: #e8bbb0;
 }
 
-button#copy { color: #c2a0c8; }
-button#copy:hover { color: #a67daf; }
+button#copy {
+  color: #3a6b8a;
+}
+button#copy:hover {
+  color: #2c5470;
+  border-color: #a8bfcf;
+}
 
 #copied {
   font-size: 11px;
-  color: #b8d8ba;
+  color: #3a6b8a;
   letter-spacing: 0.1em;
   align-self: center;
   opacity: 0;
@@ -90,7 +107,7 @@ button#copy:hover { color: #a67daf; }
 
 .divider {
   border: none;
-  border-top: 1px solid #ede4db;
+  border-top: 1px solid #c5d5e2;
   margin-bottom: 1.5rem;
 }
 
@@ -98,18 +115,20 @@ button#copy:hover { color: #a67daf; }
   font-size: 10px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #c4b5a9;
+  color: #a8bfcf;
   margin-bottom: 0.75rem;
 }
 
 .hist-item {
   font-size: 13px;
-  color: #c4b5a9;
+  color: #5e7082;
   padding: 5px 0;
   cursor: pointer;
   letter-spacing: -0.01em;
   transition: color 0.1s;
-  border-bottom: 1px solid #ede4db;
+  border-bottom: 1px solid #c5d5e2;
 }
 
-.hist-item:hover { color: #8b7b6f; }
+.hist-item:hover {
+  color: #2c3a4a;
+}
