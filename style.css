@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
   background: #f4f7fb;
   color: #2c3a4a;
   min-height: 100vh;
@@ -32,7 +32,7 @@ body {
 
 #result {
   font-size: clamp(1.6rem, 5vw, 2.4rem);
-  font-weight: normal;
+  font-weight: 800;
   color: #2c3a4a;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -56,13 +56,13 @@ body {
 select,
 button {
   font-family: inherit;
-  font-size: 12px;
-  padding: 8px 14px;
+  font-size: 13px;
+  padding: 8px 18px;
   border: 1px solid #c5d5e2;
   background: #eaf1f7;
   color: #5e7082;
   cursor: pointer;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   border-radius: 6px;
   transition:
     border-color 0.15s,
@@ -81,6 +81,11 @@ button#gen {
   background: #f2cfc6;
   color: #7a3a2b;
   border-color: #f2cfc6;
+  font-weight: 700;
+}
+
+select#sep {
+  min-width: 140px;
 }
 
 button#gen:hover {

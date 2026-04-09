@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>onomatopoeats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,16 +15,16 @@
     <div id="result">&mdash;</div>
     <div class="controls">
       <select id="sep">
-        <option value="-">-  ハイフン</option>
-        <option value="_">_  アンダースコア</option>
-        <option value=".">. ドット</option>
+        <option value="-">- hyphen</option>
+        <option value="_">_ underscore</option>
+        <option value=".">. dot</option>
       </select>
-      <button id="gen">生成</button>
-      <button id="copy">コピー</button>
+      <button id="gen">generate</button>
+      <button id="copy">copy</button>
       <span id="copied">copied</span>
     </div>
     <hr class="divider">
-    <div class="hist-label">履歴</div>
+    <div class="hist-label">history</div>
     <div id="hist-list"></div>
   </div>
 
