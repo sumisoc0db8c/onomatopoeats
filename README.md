@@ -6,7 +6,6 @@ Generate memorable random names by combining Japanese onomatopoeia with food wor
 
 - 70 Japanese onomatopoeia + 60 food nouns = 4,200 combinations
 - Separator options: hyphen, underscore, dot
-- File extension options: .md, .txt, .json, or none
 - One-click copy to clipboard
 - History of last 9 generated names
 - Pastel color palette with a gentle, stationery-like design
@@ -42,7 +41,6 @@ MIT
 
 - オノマトペ 70語 + 食材名 60語 = 4,200通りの組み合わせ
 - 区切り文字: ハイフン、アンダースコア、ドット
-- 拡張子: .md, .txt, .json, なし
 - ワンクリックでクリップボードにコピー
 - 直近9件の生成履歴
 - やさしいパステルカラーのデザイン

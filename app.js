@@ -6,8 +6,7 @@ function pick(arr) {
 
 function generate() {
   const sep = document.getElementById("sep").value;
-  const ext = document.getElementById("ext").value;
-  const name = pick(ONOMATOPOEIA) + sep + pick(NOUNS) + ext;
+  const name = pick(ONOMATOPOEIA) + sep + pick(NOUNS);
   const el = document.getElementById("result");
   el.classList.add("flash");
   setTimeout(() => {
