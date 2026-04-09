@@ -30,6 +30,12 @@ body {
   margin-bottom: 1rem;
 }
 
+.tagline {
+  font-size: 13px;
+  color: #5e7082;
+  margin-bottom: 1.5rem;
+}
+
 #result {
   font-size: clamp(1.6rem, 5vw, 2.4rem);
   font-weight: 800;
