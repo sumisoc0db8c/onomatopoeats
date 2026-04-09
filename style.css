@@ -12,9 +12,9 @@ body {
   color: #2c3a4a;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 2rem;
+  padding: 15vh 2rem 2rem;
 }
 
 .container {
@@ -53,7 +53,6 @@ body {
   margin-bottom: 2.5rem;
 }
 
-select,
 button {
   font-family: inherit;
   font-size: 13px;
@@ -66,15 +65,40 @@ button {
   border-radius: 6px;
   transition:
     border-color 0.15s,
-    color 0.15s;
-  -webkit-appearance: none;
-  appearance: none;
+    color 0.15s,
+    background 0.15s;
 }
 
-select:hover,
 button:hover {
   border-color: #a8bfcf;
   color: #2c3a4a;
+}
+
+.sep-group {
+  display: flex;
+}
+
+.sep-btn {
+  padding: 8px 14px;
+  border-radius: 0;
+  border-right-width: 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.sep-btn:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.sep-btn:last-child {
+  border-radius: 0 6px 6px 0;
+  border-right-width: 1px;
+}
+
+.sep-btn.active {
+  background: #2c3a4a;
+  color: #f4f7fb;
+  border-color: #2c3a4a;
 }
 
 button#gen {
@@ -84,9 +108,6 @@ button#gen {
   font-weight: 700;
 }
 
-select#sep {
-  min-width: 140px;
-}
 
 button#gen:hover {
   background: #e8bbb0;

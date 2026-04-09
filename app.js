@@ -5,7 +5,7 @@ function pick(arr) {
 }
 
 function generate() {
-  const sep = document.getElementById("sep").value;
+  const sep = document.querySelector(".sep-btn.active").dataset.sep;
   const name = pick(ONOMATOPOEIA) + sep + pick(NOUNS);
   const el = document.getElementById("result");
   el.classList.add("flash");
@@ -32,6 +32,13 @@ function copyText(text) {
   el.style.opacity = "1";
   setTimeout(() => el.style.opacity = "0", 1200);
 }
+
+document.querySelectorAll(".sep-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".sep-btn.active").classList.remove("active");
+    btn.classList.add("active");
+  });
+});
 
 document.getElementById("gen").addEventListener("click", generate);
 document.getElementById("copy").addEventListener("click", () => {

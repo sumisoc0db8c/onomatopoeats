@@ -14,11 +14,11 @@
     <div class="label">onomatopoeats</div>
     <div id="result">&mdash;</div>
     <div class="controls">
-      <select id="sep">
-        <option value="-">- hyphen</option>
-        <option value="_">_ underscore</option>
-        <option value=".">. dot</option>
-      </select>
+      <div class="sep-group">
+        <button class="sep-btn active" data-sep="-">-</button>
+        <button class="sep-btn" data-sep="_">_</button>
+        <button class="sep-btn" data-sep=".">.</button>
+      </div>
       <button id="gen">generate</button>
       <button id="copy">copy</button>
       <span id="copied">copied</span>
