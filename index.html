@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onomatopoeats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="label">onomatopoeats</div>
+    <div id="result">&mdash;</div>
+    <div class="controls">
+      <select id="sep">
+        <option value="-">-  ハイフン</option>
+        <option value="_">_  アンダースコア</option>
+        <option value=".">. ドット</option>
+      </select>
+      <select id="ext">
+        <option value=".md">.md</option>
+        <option value=".txt">.txt</option>
+        <option value=".json">.json</option>
+        <option value="">(なし)</option>
+      </select>
+      <button id="gen">生成</button>
+      <button id="copy">コピー</button>
+      <span id="copied">copied</span>
+    </div>
+    <hr class="divider">
+    <div class="hist-label">履歴</div>
+    <div id="hist-list"></div>
+  </div>
+
+  <script src="words/onomatopoeia.js"></script>
+  <script src="words/nouns.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
