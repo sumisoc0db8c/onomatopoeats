@@ -7,6 +7,23 @@
   "display": "standalone",
   "background_color": "#f5f0eb",
   "theme_color": "#5b6fa6",
+  "id": "/onomatopoeats/",
+  "screenshots": [
+    {
+      "src": "image/wide.png",
+      "sizes": "1246x693",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "onomatopoeats — memorable name generator"
+    },
+    {
+      "src": "image/narrow.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "onomatopoeats — memorable name generator"
+    }
+  ],
   "icons": [
     {
       "src": "image/icon-192.png",
